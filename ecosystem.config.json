@@ -1,0 +1,25 @@
+{
+  "name": "music-platform-backend",
+  "script": "server.js",
+  "cwd": "/var/www/music-platform/backend",
+  "instances": 1,
+  "exec_mode": "fork",
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": 8080
+  },
+  "error_file": "/var/log/music-platform/error.log",
+  "out_file": "/var/log/music-platform/out.log",
+  "log_date_format": "YYYY-MM-DD HH:mm:ss Z",
+  "merge_logs": true,
+  "autorestart": true,
+  "max_restarts": 10,
+  "min_uptime": "10s",
+  "max_memory_restart": "500M",
+  "watch": false,
+  "ignore_watch": [
+    "node_modules",
+    "uploads",
+    "logs"
+  ]
+}
