@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 曼波音乐 (Manbo Music)
 
 一个免费的开源音乐平台，支持音乐上传、播放、歌单管理等功能。
@@ -124,3 +125,7 @@ MIT License
 ## 贡献
 
 欢迎提交 Issue 和 Pull Request！
+=======
+# manbo-music
+a free music platform
+>>>>>>> d221ebc3f4150d4a5c3bf30c4b430c3abcdf3b13
