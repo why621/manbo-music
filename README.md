@@ -118,9 +118,7 @@ music-platform/
 
 详细部署说明请查看 [DEPLOYMENT.md](./DEPLOYMENT.md) 或 [QUICK_START.md](./QUICK_START.md)
 
-## 许可证
 
-MIT License
 
 ## 贡献
 
