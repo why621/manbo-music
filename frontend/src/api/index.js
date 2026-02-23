@@ -112,11 +112,11 @@ export const songAPI = {
   addToHistory: (data) => api.post('/history', data),
   deleteHistory: (historyId) => api.delete(`/history/${historyId}`),
   clearHistory: () => api.delete('/history'),
-  download: (songId) => {
-    const url = `http://localhost:8080/api/v1/songs/${songId}/download`
+  download: (songId, title) => {
+    const url = `${window.location.origin}/api/v1/songs/${songId}/download`
     const link = document.createElement('a')
     link.href = url
-    link.download = `song_${songId}.mp3`
+    link.download = `${title || 'song'}.mp3`
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)

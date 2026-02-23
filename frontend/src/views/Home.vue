@@ -286,7 +286,7 @@ const addToPlaylist = async (playlistId) => {
 // 下载歌曲
 const downloadSong = (song) => {
   try {
-    songAPI.download(song.id)
+    songAPI.download(song.id, song.title)
   } catch (error) {
     console.error('下载歌曲失败:', error)
     alert('下载失败，请稍后重试')

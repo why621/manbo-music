@@ -357,7 +357,7 @@ const downloadSong = () => {
   if (!currentSong.value) return
   
   try {
-    songAPI.download(currentSong.value.id)
+    songAPI.download(currentSong.value.id, currentSong.value.title)
   } catch (error) {
     console.error('下载歌曲失败:', error)
     alert('下载失败，请稍后重试')
